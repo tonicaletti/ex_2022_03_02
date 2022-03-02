@@ -38,7 +38,19 @@ bool issubstr(std::string &s, std::string &t)
 
 bool is_subsequence(std::string &longstr, std::string &sub)
 {
-    return true;
+    unsigned int index = 0;
+    for (int i = 0; i < longstr.length(); i++)
+    {
+        if (longstr[i] == sub[index])
+        {
+            index++;
+        }
+    }
+    if (index == sub.length())
+    {
+        return true;
+    }
+    return false;
 }
 
 int main()
