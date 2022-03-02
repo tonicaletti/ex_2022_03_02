@@ -60,13 +60,14 @@ int main()
     std::string s = "longstring";
     std::string t = "ngstr";
     std::string t_2 = "mffgs";
-
+    std::string t_3 = "lngti";
     //char c = t[0];
     //auto it = std::find(s.begin(), s.end(), 'c');
 
 
-    std::cout << std::boolalpha << issubstr(s, t) << std::endl;
-    std::cout << std::boolalpha << issubstr(s, t_2) << std::endl;
+    std::cout << std::boolalpha << is_subsequence(s, t) << std::endl;
+    std::cout << std::boolalpha << is_subsequence(s, t_2) << std::endl;
+    std::cout << std::boolalpha << is_subsequence(s, t_3) << std::endl;
 
 
     return 0;
